@@ -246,15 +246,21 @@
 
 <script>
     var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right ="0";
+  
+    // Set the menu to be closed by default
+    window.onload = function() {
+      sidemenu.style.right = "-200px"; // Closed position
+    };
+  
+    function openmenu() {
+      sidemenu.style.right = "0"; // Open position
     }
-    function closemenu(){
-        sidemenu.style.right ="-200px";
+  
+    function closemenu() {
+      sidemenu.style.right = "-200px"; // Close position
     }
-
-</script>
+  </script>
+  
 
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyU2YWVleHV3eJqmhRTvNiuS6Ass6IN0kfVI6dZ18GSnXjjnz-LSe3I4NkjIdxL4pH3/exec'
